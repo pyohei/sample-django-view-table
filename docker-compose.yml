@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  postgresql:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    command: -c shared_preload_libraries='pg_stat_statements' -c pg_stat_statements.track=all
+    environment:
+      - POSTGRES_DB=database
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password

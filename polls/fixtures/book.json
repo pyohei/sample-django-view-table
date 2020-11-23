@@ -1,0 +1,42 @@
+[
+  {
+    "model": "polls.book",
+    "pk": 1,
+    "fields": {
+        "name": "test1",
+        "category": "Business"
+    }
+  },
+  {
+    "model": "polls.book",
+    "pk": 2,
+    "fields": {
+        "name": "test2",
+        "category": "Business"
+    }
+  },
+  {
+    "model": "polls.book",
+    "pk": 3,
+    "fields": {
+        "name": "test3",
+        "category": "Cooking"
+    }
+  },
+  {
+    "model": "polls.book",
+    "pk": 4,
+    "fields": {
+        "name": "test4",
+        "category": "Cooking"
+    }
+  },
+  {
+    "model": "polls.book",
+    "pk": 5,
+    "fields": {
+        "name": "test5",
+        "category": "Cooking"
+    }
+  }
+]
